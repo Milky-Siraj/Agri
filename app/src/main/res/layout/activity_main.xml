@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tomato6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agri-Urban Hub"
+        android:background="#80FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image"
+        android:layout_width="360dp"
+        android:layout_height="201dp"
+        android:layout_below="@+id/titleHome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tomato2" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textColor="@color/black"
+        android:layout_below="@+id/gridbox"
+        android:background="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="12dp"
+        />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/aboutusdescriptionbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutus"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="15dp"
+            app:cardUseCompatPadding="true">
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleViewCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="fill"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="This application has been developed through a collaboration of engineering teams to empower urban farmers with the ability to effectively manage and oversee their farms using camera and sensor data. The primary focus of this particular project and application is centered around tomato farming within urban areas. However, the principles and functionalities can be readily adapted to cater to various other crops as well. By harnessing the available data, this application provides a streamlined and user-friendly platform for farmers to monitor and optimize their farming operations in a professional and efficient manner. "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:justificationMode="inter_word" />
+        </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/features"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Features"
+        android:layout_below="@+id/image"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="12dp"
+        />
+    <GridLayout
+        android:id="@+id/gridbox"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/features"
+        android:layout_margin="20dp"
+        android:columnCount="2"
+        android:rowCount="3" >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLabTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5C972A"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+<!--                <ImageView-->
+<!--                    android:layout_width="155dp"-->
+<!--                    android:layout_height="165dp"-->
+<!--                    android:src="@drawable/home2" />-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/baseline_home_24"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewcrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5C972A"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+               >
+
+<!--                <ImageView-->
+<!--                    android:layout_width="158dp"-->
+<!--                    android:layout_height="169dp"-->
+<!--                    android:src="@drawable/home2"-->
+<!--                    -->
+<!--                    />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Crops"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/baseline_energy_savings_leaf_24"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardcropAnalysis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5C972A"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="155dp"-->
+                <!--                    android:layout_height="165dp"-->
+                <!--                    android:src="@drawable/home2" />-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crop Anaylsis"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/baseline_search_24"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardirrigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5C972A"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="158dp"-->
+            <!--                    android:layout_height="169dp"-->
+            <!--                    android:src="@drawable/home2"-->
+            <!--                    -->
+            <!--                    />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Irrigation"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/baseline_water_24"/>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5C972A"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="158dp"-->
+                <!--                    android:layout_height="169dp"-->
+                <!--                    android:src="@drawable/home2"-->
+                <!--                    -->
+                <!--                    />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tips and Updates"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/baseline_tips_and_updates_24"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardhumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#5C972A"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="158dp"-->
+                <!--                    android:layout_height="169dp"-->
+                <!--                    android:src="@drawable/home2"-->
+                <!--                    -->
+                <!--                    />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity Control"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/baseline_water_drop_24"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</GridLayout>
+    </RelativeLayout>
+</ScrollView>
