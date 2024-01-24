@@ -6,6 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 public class VeiwCropActivity2 extends AppCompatActivity {
 
@@ -21,5 +23,12 @@ public class VeiwCropActivity2 extends AppCompatActivity {
 
             }
         });
+        VideoView videoView = findViewById(R.id.videoView);
+        String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.agrivid3;
+        videoView.setVideoPath(videoPath);
+        videoView.start();
+//        MediaController mediaController=new MediaController(this);
+//        videoView.setMediaController(mediaController);
+//        mediaController.setAnchorView(videoView);
     }
 }

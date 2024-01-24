@@ -19,6 +19,16 @@ public class humidityActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(humidityActivity.this,MainActivity.class));
 
+
+            }
+        });
+        CardView viewhumidty= findViewById(R.id.cardviewhumidity);
+        viewhumidty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(humidityActivity.this, viewHumidity.class));
+
+
             }
         });
     }

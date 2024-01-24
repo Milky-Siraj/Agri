@@ -70,10 +70,15 @@
             android:textColor="@color/black"
             android:textSize="15dp"/>
     </androidx.cardview.widget.CardView>
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_below="@+id/cardDescription"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/cardDescription"
+        android:layout_below="@+id/videoView"
         android:layout_margin="20dp"
         android:columnCount="2"
         android:rowCount="3" >
